@@ -43,6 +43,10 @@ https://karpathy.github.io/2015/05/21/rnn-effectiveness/
 ### SOM Reference
 #### The Self-Organizing Map By Tuevo Kohonen (1990)
 https://sci2s.ugr.es/keel/pdf/algorithm/articulo/1990-Kohonen-PIEEE.pdf
+### Kohonen's Self Organizing Feature Maps By Mat Buckland (2004)
+http://www.ai-junkie.com/ann/som/som1.html
+### SOM-Creating hexagonal heatmaps with D3.js By Nadieh Bremer(2003)
+https://www.visualcinnamon.com/2013/07/self-organizing-maps-creating-hexagonal/
 
 ### Architecture of SOM
 ![img.png](Architecture of SOM.png)
@@ -50,6 +54,14 @@ https://sci2s.ugr.es/keel/pdf/algorithm/articulo/1990-Kohonen-PIEEE.pdf
 ### SOM Intuition
 - There is no activation function.
 - Weights are characteristic of the nodes itself.
+
+### Important to know
+- SOMs retain topology of the input set.
+- SOMs reveal correlations that are not easily identified.
+- SOMs classify data without supervision.
+- No target vector -> no backpropagation.
+- No lateral connections between output nodes.
+
 #### How to SOMs Learn
 ![img.png](how to soms learn.png)
 
