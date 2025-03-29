@@ -65,6 +65,30 @@ https://www.visualcinnamon.com/2013/07/self-organizing-maps-creating-hexagonal/
 #### How to SOMs Learn
 ![img.png](how to soms learn.png)
 
-### SOM Architect Methodology
+## Boltzmann Machine
+- Used for Recommendation Systems
+### The Boltzmann Machine
+![img.png](The Boltzmann Machine.png)
+- This model doesn't have output layer.
+- Everything is connected. Hyper Connectivity.
+- There is no direction. All bidirectional.
+### Energy-Based Models (EBM)
+![img.png](Energy Based Models.png)
+- Energy: Input(X), Output(Y) 또는 숨겨진 변수 (H) 조합에 대해, Energy Score라는 Scala Value를 계산한다.
+  - 이 에너지는 낮을 수록 더 가능성 있는 (좋은) 상태를 의미
+- 전통적인 확률 모델과 달리, EBMs는 명시적인 확률 분포를 모델링하지 않음
+  - 대신 모든 입력에 대해 에너지 함수를 정의하고, 좋은 샘플일수록 에너지가 낮게 나오도록 학습한다.
+- 정답 샘플의 에너지를 낮게, 거짓(또는 노이즈) 샘플의 에너지를 높게 만드는 것이 학습 목표.
+  - 대표적으로 Contrastive Loss, Margin-Based Loss 등을 사용하여 학습
 
-### 
+### Restricted Boltzmann Machine (RBM)
+![img.png](Restricted Boltzmann Machines.png)
+- RBM은 EBM의 대표적인 예
+- 비지도 학습 모델이며, 입력데이터의 잠재 표현(latent representation)을 학습하는데 사용됨
+### Contrastive Divergence (CD)
+### Deep Belief Networks (DBN)
+### Deep Boltzmann Machines (DBM)
+
+### EBN References
+#### A Tutorial on Energy-Based Learning by Yann LeCun et al. (2006)
+https://www.researchgate.net/publication/200744586_A_tutorial_on_energy-based_learning 
