@@ -86,9 +86,19 @@ https://www.visualcinnamon.com/2013/07/self-organizing-maps-creating-hexagonal/
 - RBM은 EBM의 대표적인 예
 - 비지도 학습 모델이며, 입력데이터의 잠재 표현(latent representation)을 학습하는데 사용됨
 ### Contrastive Divergence (CD)
+![img.png](Contrastive Divergence.png)
+- Gip Sampling
+- Input value reconstructed through RBM on final scenario.
 ### Deep Belief Networks (DBN)
+![img.png](Deep Belief Network.png)
 ### Deep Boltzmann Machines (DBM)
 
 ### EBN References
 #### A Tutorial on Energy-Based Learning by Yann LeCun et al. (2006)
 https://www.researchgate.net/publication/200744586_A_tutorial_on_energy-based_learning 
+#### Greedy Layer-Wise Training of Deep Networks by Yoshua Bengio et al. (2006)
+https://www.iro.umontreal.ca/~lisa/pointeurs/BengioNips2006All.pdf
+#### The wake-sleep algorithm for unsupervised neural networks by Geoffrey Hinton et al. (1995)
+https://www.gatsby.ucl.ac.uk/~dayan/papers/hdfn95.pdf
+#### Deep Boltzmann Machines by Ruslan Salakhutdinov et al. (2009)
+https://proceedings.mlr.press/v5/salakhutdinov09a.html
