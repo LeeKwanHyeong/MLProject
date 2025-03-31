@@ -102,3 +102,57 @@ https://www.iro.umontreal.ca/~lisa/pointeurs/BengioNips2006All.pdf
 https://www.gatsby.ucl.ac.uk/~dayan/papers/hdfn95.pdf
 #### Deep Boltzmann Machines by Ruslan Salakhutdinov et al. (2009)
 https://proceedings.mlr.press/v5/salakhutdinov09a.html
+
+## Auto-Encoder
+![img.png](Auto Encoder.png)
+- Used for Recommendation Systsems
+- 
+
+### Auto Encoders
+
+### Training of an Auto Encoder
+- Visible Input Nodes -> Hidden Nodes -> Visible Output Nodes
+- Step 1: We start with an array where the lines(the observations) correspond to the users and the columns (the Features)
+correspond to the movies. Each cell (u, i) contains the rating (from 1 to 5.0 if no rating)
+of the movie i by the user u.
+- Step 2: The first user goes into the network. 
+The input vector x = (r1, r2,...rm) contains all its ratings for all movies.
+- Step 3: The input vector x is encoded into a vector z of lower dimensions by a mapping function f (e.g: sigmoid function)
+z = f(Wx + b) where W is the vector of input weights and b the bias.
+- Step 4: z is then decoded into the output vector y of same dimensions as x, aiming to replicate the input vector x.
+- Step 5: The reconstruction error d(x, y) = ||x-y|| is computed. The goal is to minimize it.
+- Step 6: Back-Propagation: from right to left, the error is back-propagated.
+The weights are updated according to how much they are responsible for the error.
+The learning rate decides by how much we update the weights.
+- Step 7: Repeat Steps 1 to 6 and update the weights after each observation (Reinforcement Learning).
+Or: Repeat steps 1to 6 but update the weights only after a batch of observation (Batch Learning).
+### Overcomplete Hidden Layers
+![img.png](Overcomplete Hidden Layers.png)
+### Sparse Auto Encoder
+
+### Denoising Auto Encoder
+![img.png](Denosing AutoEncoder.png)
+### Contractive Auto Encoder
+![img.png](Contractive AutoEncoder.png)
+### Stacked Auto Encoder
+![img.png](Stacked AutoEncoder.png)
+### Deep Auto Encoder
+![img.png](Deep AutoEncoder.png)
+### Auto Encoder References
+#### Neural Networks Are Impressively Good At Compression by Malte Skarupke (2016)
+https://probablydance.com/2016/04/30/neural-networks-are-impressively-good-at-compression/
+#### Building Autoencoders in Keras By Francois Chollet (2016)
+https://blog.keras.io/building-autoencoders-in-keras.html
+#### Deep Learning Tutorial - Sparse Autoencoder By Chris McCormick (2014)
+https://mccormickml.com/2014/05/30/deep-learning-tutorial-sparse-autoencoder/
+#### k-Sparse Autoencoders By Alireza Makhzani et al. (2014)
+https://arxiv.org/pdf/1312.5663
+#### Extracting and Composing Robust Features with Denoising Autoencoders By Pascal Vincent et al. (2008)
+https://www.cs.toronto.edu/~larocheh/publications/icml-2008-denoising-autoencoders.pdf
+#### Contractive Auto-Encoders: Explicit Invariance During Feature Extraction By Salah Rifai et al. (2011)
+https://icml.cc/2011/papers/455_icmlpaper.pdf
+#### Stacked Denoising Autoencoders: Learning Useful Representations in a Deep Network with a Local Denoising Criterion
+#### By Pascal Vincent et al. (2010)
+https://www.jmlr.org/papers/volume11/vincent10a/vincent10a.pdf
+#### Reducing the Dimensionality of Data with Neural Networks By Geoffrey Hinton et al. (2006)
+https://www.cs.toronto.edu/~hinton/absps/science.pdf
